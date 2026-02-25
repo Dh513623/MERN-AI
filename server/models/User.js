@@ -19,10 +19,38 @@ const userSchema=new mongoose.Schema(
             required:true,
             minlength:6
         },
+        level:{
+            type:String,
+            enum:["Beginner","Intermediate","Advanced"],
+            default:"Beginner"
+        },
+        dailyStreak:{
+            type:Number,
+            default:0
+        },
+        lastActiveDate:{
+            type:Date
+        },
+        grammarScore:{
+            type:Number,
+            default:0
+        },
+        fluencyScore:{
+            type:Number,
+            default:0
+        },
+        vocabularyScore:{
+            type:Number,
+            default:0
+        },
+        pronunciationScore:{
+            type:Number,
+            default:0
+        },
         profileImage:{
             type:String,
             default:""
-        }  
+        } 
     },
     {timestamps:true} 
 );
