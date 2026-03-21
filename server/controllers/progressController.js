@@ -1,0 +1,142 @@
+const { getProgressByModule } = require("../utils/progressUtils");
+
+exports.getFullReport = async (req, res) => {
+  try {
+    const userId = req.params.userId;
+
+    // 🔥 Get all modules
+    const grammar = await getProgressByModule(userId, "grammar");
+    const vocabulary = await getProgressByModule(userId, "vocabulary");
+    const pronunciation = await getProgressByModule(userId, "pronunciation");
+
+    // 🔥 Overall Avg Function
+    const getAvg = (data) => {
+      if (!data.length) return 0;
+      const total = data.reduce((sum, d) => sum + d.avgScore, 0);
+      return Math.round(total / data.length);
+    };
+
+    const report = {
+      overallProgress: {
+        grammar: getAvg(grammar),
+        vocabulary: getAvg(vocabulary),
+        pronunciation: getAvg(pronunciation)
+      },
+      charts: {
+        grammar,
+        vocabulary,
+        pronunciation
+      }
+    };
+
+    res.json(report);
+
+  } catch (err) {
+    res.status(500).json({ message: "Error generating report" });
+  }
+};
+
+
+
+const PDFDocument = require("pdfkit");
+const User = require("../models/User");
+
+exports.downloadReport = async (req, res) => {
+  try {
+    const userId = req.params.userId;
+
+    // 🔥 Get user details
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // 🔥 Get progress data
+    const grammar = await getProgressByModule(userId, "grammar");
+    const vocabulary = await getProgressByModule(userId, "vocabulary");
+    const pronunciation = await getProgressByModule(userId, "pronunciation");
+
+    const getAvg = (data) => {
+      if (!data.length) return 0;
+      const total = data.reduce((sum, d) => sum + d.avgScore, 0);
+      return Math.round(total / data.length);
+    };
+
+    const report = {
+      grammar: getAvg(grammar),
+      vocabulary: getAvg(vocabulary),
+      pronunciation: getAvg(pronunciation)
+    };
+
+    // 📄 Create PDF
+    const doc = new PDFDocument();
+
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", "attachment; filename=report.pdf");
+
+    doc.pipe(res);
+
+    // 📝 Title
+    doc.fontSize(20).text("User Progress Report", { align: "center" });
+    doc.moveDown();
+
+    // 👤 USER DETAILS 🔥
+    doc.fontSize(14).text("User Details:");
+    doc.text(`Name: ${user.name}`);
+    doc.text(`Email: ${user.email}`);
+    doc.text(`Level: ${user.level}`);
+    doc.text(`Daily Streak: ${user.dailyStreak}`);
+    doc.text(`Report Date: ${new Date().toLocaleDateString()}`);
+
+    doc.moveDown();
+
+    // 📊 Overall Scores
+    doc.text("Overall Performance:");
+    doc.text(`Grammar: ${report.grammar}/10`);
+    doc.text(`Vocabulary: ${report.vocabulary}/10`);
+    doc.text(`Pronunciation: ${report.pronunciation}/10`);
+
+    doc.moveDown();
+
+    // 📈 Detailed Progress
+    doc.text("Grammar Progress:");
+    grammar.forEach(g => {
+      doc.text(`${g.date} → ${g.avgScore}`);
+    });
+
+    doc.moveDown();
+
+    doc.text("Pronunciation Progress:");
+    pronunciation.forEach(p => {
+      doc.text(`${p.date} → ${p.avgScore}`);
+    });
+
+    doc.moveDown();
+
+    doc.text("Vocabulary Progress:");
+    vocabulary.forEach(v => {
+      doc.text(`${v.date} → ${v.avgScore}`);
+    });
+
+    doc.moveDown();
+
+    // 💡 Simple Insights (BONUS 🔥)
+    doc.text("Insights:");
+    
+    if (report.grammar >= 7) doc.text("✅ Strong in Grammar");
+    else doc.text("⚠️ Improve Grammar");
+
+    if (report.pronunciation >= 7) doc.text("✅ Good Pronunciation");
+    else doc.text("⚠️ Practice Pronunciation");
+
+    if (report.vocabulary >= 7) doc.text("✅ Strong Vocabulary");
+    else doc.text("⚠️ Improve Vocabulary");
+
+    doc.end();
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "PDF generation failed" });
+  }
+};

@@ -1,0 +1,1202 @@
+[
+  {
+    "text": "The cat runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow runs on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow jumps on the mat",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow sits in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow eats in the yard",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow drinks near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow plays near the tree",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow walks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow looks by the road",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow sleeps in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cat stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The dog stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The boy stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The girl stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The bird stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The baby stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The farmer stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The child stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The duck stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The cow stands in the park",
+    "difficulty": "easy"
+  },
+  {
+    "text": "The teacher explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener explained the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener completed the lesson carefully in the classroom",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener started the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener finished the project before the deadline",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener organized a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener prepared a long journey across the country",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener designed the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener created the task with great attention",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener watched a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The teacher visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The student visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The traveler visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The driver visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The artist visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The singer visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The player visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The writer visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The cook visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The gardener visited a beautiful painting in the studio",
+    "difficulty": "medium"
+  },
+  {
+    "text": "The experienced scientist analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher analyzed a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher investigated a complex problem using advanced techniques",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher constructed an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher demonstrated an ancient structure hidden in the mountains",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher composed a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher discovered a detailed model for the new project",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher explained a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher designed a complicated theory to the audience",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher completed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The experienced scientist observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The adventurous explorer observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The dedicated engineer observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The brilliant professor observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The talented musician observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The courageous firefighter observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The intelligent researcher observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The skilled architect observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The determined athlete observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  },
+  {
+    "text": "The curious philosopher observed a magnificent symphony for the concert hall",
+    "difficulty": "hard"
+  }
+]
