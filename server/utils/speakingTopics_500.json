@@ -1,0 +1,5002 @@
+[
+  {
+    "title": "Discuss a childhood memory #1",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Describe a person you admire #2",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about your dream career #3",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a social issue #4",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss a person you admire #5",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Talk about a leadership experience #6",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Explain online education #7",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Explain social media influence #8",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Explain a family tradition #9",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a communication challenge #10",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about a person you admire #11",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Talk about a leadership experience #12",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Describe a life lesson #13",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss a social issue #14",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Describe a leadership experience #15",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Explain your favorite hobby #16",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Explain a travel experience #17",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about a person you admire #18",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #19",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a childhood memory #20",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a festival #21",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Share your opinion about a leadership experience #22",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Explain a technological invention #23",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Explain climate change #24",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Talk about a challenging project #25",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss a book that influenced you #26",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Describe a festival #27",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Talk about a life lesson #28",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss an environmental problem #29",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Talk about a life lesson #30",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Discuss an environmental problem #31",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Describe online education #32",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Share your opinion about a volunteering activity #33",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss your biggest achievement #34",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Discuss a technological invention #35",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about your biggest achievement #36",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a challenging project #37",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a family tradition #38",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Share your opinion about a festival #39",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a volunteering activity #40",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Discuss a teamwork experience #41",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a volunteering activity #42",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Describe a volunteering activity #43",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Share your opinion about a teamwork experience #44",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss an environmental problem #45",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Talk about a difficult decision #46",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Explain a public event #47",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about a childhood memory #48",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Describe a teamwork experience #49",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Describe a festival #50",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a challenging project #51",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss a family tradition #52",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Share your opinion about your biggest achievement #53",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a future goal #54",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about your biggest achievement #55",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Share your opinion about a childhood memory #56",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a family tradition #57",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #58",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a future goal #59",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a personal failure #60",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Describe a technological invention #61",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about your dream career #62",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a challenging project #63",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss an environmental problem #64",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about a cultural tradition #65",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about a technological invention #66",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a leadership experience #67",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a leadership experience #68",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a social issue #69",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss your dream career #70",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Explain your biggest achievement #71",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Explain a communication challenge #72",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss a technological invention #73",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a communication challenge #74",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Discuss climate change #75",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a festival #76",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Explain a festival #77",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Explain a personal failure #78",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a movie that inspired you #79",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a childhood memory #80",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a challenging project #81",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Share your opinion about your dream career #82",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about a teamwork experience #83",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a communication challenge #84",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Share your opinion about a communication challenge #85",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Explain your biggest achievement #86",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about an environmental problem #87",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a cultural tradition #88",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a volunteering activity #89",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a movie that inspired you #90",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss a social issue #91",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Explain a book that influenced you #92",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Share your opinion about a personal failure #93",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Describe a communication challenge #94",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #95",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a family tradition #96",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Describe a historical event #97",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Share your opinion about your biggest achievement #98",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about a difficult decision #99",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about social media influence #100",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about climate change #101",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a technological invention #102",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Share your opinion about a life lesson #103",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Talk about a difficult decision #104",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a time you felt proud #105",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a health habit #106",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about a historical event #107",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a volunteering activity #108",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Share your opinion about a leadership experience #109",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Talk about a health habit #110",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Describe a personal failure #111",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Share your opinion about a health habit #112",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss an environmental problem #113",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a memorable experience #114",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a difficult decision #115",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about your favorite hobby #116",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Explain a teamwork experience #117",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about a time you felt proud #118",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about a future goal #119",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Describe a teamwork experience #120",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a childhood memory #121",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Talk about online education #122",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Discuss your biggest achievement #123",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Describe a travel experience #124",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a memorable experience #125",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Describe a teamwork experience #126",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about a life lesson #127",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about a movie that inspired you #128",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Describe climate change #129",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Discuss your biggest achievement #130",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Explain a festival #131",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Share your opinion about a time you felt proud #132",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Explain a life lesson #133",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Describe your biggest achievement #134",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a teamwork experience #135",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Explain an environmental problem #136",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Discuss a life lesson #137",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Describe a life lesson #138",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a memorable experience #139",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a social issue #140",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Discuss a teamwork experience #141",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a communication challenge #142",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a challenging project #143",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Describe your dream career #144",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Describe a time you felt proud #145",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Describe a life lesson #146",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Talk about a person you admire #147",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Describe a movie that inspired you #148",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a memorable experience #149",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Explain a movie that inspired you #150",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Explain a historical event #151",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a challenging project #152",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about a technological invention #153",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Describe a childhood memory #154",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a technological invention #155",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about a festival #156",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Explain your favorite hobby #157",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a life lesson #158",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a memorable experience #159",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss your dream career #160",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss your favorite hobby #161",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about a historical event #162",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a challenging project #163",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss an environmental problem #164",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Describe a movie that inspired you #165",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a volunteering activity #166",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about your dream career #167",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a cultural tradition #168",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a challenging project #169",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #170",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a personal failure #171",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a family tradition #172",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Explain a public event #173",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Describe a personal failure #174",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a social issue #175",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about climate change #176",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Describe a memorable experience #177",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss online education #178",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a teamwork experience #179",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Explain a cultural tradition #180",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Describe a communication challenge #181",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a childhood memory #182",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Talk about a book that influenced you #183",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a personal failure #184",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a festival #185",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Discuss your favorite hobby #186",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a cultural tradition #187",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Describe social media influence #188",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Describe a future goal #189",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss a technological invention #190",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about a travel experience #191",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a communication challenge #192",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about your favorite hobby #193",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about your biggest achievement #194",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Describe a childhood memory #195",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Describe a time you felt proud #196",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Talk about a leadership experience #197",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a time you felt proud #198",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Describe a cultural tradition #199",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Describe a family tradition #200",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Explain social media influence #201",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Describe a life lesson #202",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a health habit #203",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Talk about a memorable experience #204",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a leadership experience #205",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Discuss your biggest achievement #206",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Describe a person you admire #207",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Discuss a personal failure #208",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Explain a movie that inspired you #209",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Talk about climate change #210",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a memorable experience #211",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Describe a festival #212",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #213",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Describe your favorite hobby #214",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Describe a public event #215",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a leadership experience #216",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a challenging project #217",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Explain social media influence #218",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "environment"
+  },
+  {
+    "title": "Discuss a life lesson #219",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about a teamwork experience #220",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about a memorable experience #221",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a difficult decision #222",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a life lesson #223",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a volunteering activity #224",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a social issue #225",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a person you admire #226",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Talk about a life lesson #227",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Explain a family tradition #228",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Explain an environmental problem #229",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Talk about your favorite hobby #230",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a historical event #231",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss a cultural tradition #232",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about a communication challenge #233",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Share your opinion about a communication challenge #234",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Talk about a difficult decision #235",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #236",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Explain a personal failure #237",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Describe your favorite hobby #238",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a technological invention #239",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss a leadership experience #240",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Describe climate change #241",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Describe a technological invention #242",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Explain your favorite hobby #243",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Discuss a public event #244",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about online education #245",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a social issue #246",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a movie that inspired you #247",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Share your opinion about a family tradition #248",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a teamwork experience #249",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain an environmental problem #250",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #251",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a book that influenced you #252",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "environment"
+  },
+  {
+    "title": "Explain a future goal #253",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Explain a movie that inspired you #254",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #255",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #256",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Explain online education #257",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Share your opinion about a personal failure #258",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Talk about an environmental problem #259",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a public event #260",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Explain a life lesson #261",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Describe a health habit #262",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Explain a family tradition #263",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a historical event #264",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Describe a memorable experience #265",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a future goal #266",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a life lesson #267",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Explain a teamwork experience #268",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a childhood memory #269",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a personal failure #270",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a family tradition #271",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Describe a social issue #272",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Describe a time you felt proud #273",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Describe social media influence #274",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Share your opinion about your dream career #275",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Describe a memorable experience #276",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss a travel experience #277",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Explain social media influence #278",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a cultural tradition #279",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a challenging project #280",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about a family tradition #281",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a teamwork experience #282",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about a life lesson #283",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Share your opinion about your biggest achievement #284",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Describe your dream career #285",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about your favorite hobby #286",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Explain a childhood memory #287",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Explain a movie that inspired you #288",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a technological invention #289",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about a family tradition #290",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #291",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about a life lesson #292",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Describe a historical event #293",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Describe a future goal #294",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a person you admire #295",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain an environmental problem #296",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a festival #297",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Explain a time you felt proud #298",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a time you felt proud #299",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Share your opinion about a future goal #300",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Talk about a challenging project #301",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Explain climate change #302",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a public event #303",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss a person you admire #304",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #305",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Discuss an environmental problem #306",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Describe a communication challenge #307",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Describe an environmental problem #308",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Explain a personal failure #309",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a travel experience #310",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Explain a childhood memory #311",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Explain an environmental problem #312",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Talk about a public event #313",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Explain online education #314",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Talk about a difficult decision #315",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Discuss a historical event #316",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a person you admire #317",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about online education #318",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about your favorite hobby #319",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Talk about a person you admire #320",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Describe a memorable experience #321",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a memorable experience #322",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a time you felt proud #323",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a memorable experience #324",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Describe a historical event #325",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Talk about a future goal #326",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Explain a leadership experience #327",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a leadership experience #328",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain your biggest achievement #329",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Discuss an environmental problem #330",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a volunteering activity #331",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss a historical event #332",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a book that influenced you #333",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Share your opinion about a teamwork experience #334",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain a book that influenced you #335",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a person you admire #336",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a childhood memory #337",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a movie that inspired you #338",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Explain a health habit #339",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Explain a public event #340",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a challenging project #341",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Discuss a future goal #342",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss your biggest achievement #343",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Share your opinion about a teamwork experience #344",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a social issue #345",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Explain a time you felt proud #346",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a communication challenge #347",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Explain a health habit #348",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Describe a personal failure #349",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Discuss a book that influenced you #350",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about social media influence #351",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about a public event #352",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a memorable experience #353",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Talk about a communication challenge #354",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Explain a cultural tradition #355",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Explain a person you admire #356",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain a difficult decision #357",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a person you admire #358",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Describe a festival #359",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "culture"
+  },
+  {
+    "title": "Explain your dream career #360",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a technological invention #361",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Explain your dream career #362",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss social media influence #363",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Discuss a public event #364",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Explain climate change #365",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a volunteering activity #366",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Discuss a teamwork experience #367",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Describe your dream career #368",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Describe your favorite hobby #369",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Explain a social issue #370",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about a historical event #371",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about your dream career #372",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a book that influenced you #373",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a public event #374",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Talk about a leadership experience #375",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a public event #376",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about social media influence #377",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Discuss a family tradition #378",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Describe a volunteering activity #379",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Explain a travel experience #380",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Describe a festival #381",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss a future goal #382",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a movie that inspired you #383",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a future goal #384",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Talk about a family tradition #385",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Explain a family tradition #386",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a memorable experience #387",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain a health habit #388",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Explain climate change #389",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Talk about a leadership experience #390",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a difficult decision #391",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about online education #392",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain a childhood memory #393",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "career"
+  },
+  {
+    "title": "Explain a future goal #394",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Discuss a memorable experience #395",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Share your opinion about a health habit #396",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about a public event #397",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "relationships"
+  },
+  {
+    "title": "Describe your biggest achievement #398",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Share your opinion about a movie that inspired you #399",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Explain a social issue #400",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Explain online education #401",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Explain a teamwork experience #402",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Explain your favorite hobby #403",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Explain a technological invention #404",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #405",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Explain a technological invention #406",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Share your opinion about a life lesson #407",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Describe your biggest achievement #408",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a difficult decision #409",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Share your opinion about a communication challenge #410",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Describe a technological invention #411",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Explain a time you felt proud #412",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain a technological invention #413",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "title": "Explain a challenging project #414",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a communication challenge #415",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Discuss a festival #416",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Discuss a travel experience #417",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Describe a personal failure #418",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss a movie that inspired you #419",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Talk about a leadership experience #420",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss an environmental problem #421",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a challenging project #422",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a teamwork experience #423",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Discuss a family tradition #424",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Describe a teamwork experience #425",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "career"
+  },
+  {
+    "title": "Discuss a memorable experience #426",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss your favorite hobby #427",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss a personal failure #428",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about an environmental problem #429",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Talk about a difficult decision #430",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Describe a time you felt proud #431",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Share your opinion about a time you felt proud #432",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #433",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a movie that inspired you #434",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Talk about a festival #435",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about a travel experience #436",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Explain a cultural tradition #437",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Talk about a movie that inspired you #438",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "travel"
+  },
+  {
+    "title": "Discuss climate change #439",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Explain a book that influenced you #440",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Describe a person you admire #441",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a time you felt proud #442",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Talk about a childhood memory #443",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Explain a family tradition #444",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "title": "Share your opinion about a life lesson #445",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about climate change #446",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Share your opinion about a future goal #447",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a communication challenge #448",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Describe your dream career #449",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "travel"
+  },
+  {
+    "title": "Describe your favorite hobby #450",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "society"
+  },
+  {
+    "title": "Share your opinion about your biggest achievement #451",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Explain a future goal #452",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a personal failure #453",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Discuss a historical event #454",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "entertainment"
+  },
+  {
+    "title": "Share your opinion about a difficult decision #455",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Discuss your dream career #456",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Discuss your dream career #457",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "medium",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a communication challenge #458",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about a social issue #459",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "culture"
+  },
+  {
+    "title": "Share your opinion about a leadership experience #460",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "environment"
+  },
+  {
+    "title": "Describe a memorable experience #461",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "title": "Share your opinion about an environmental problem #462",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a volunteering activity #463",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Describe a festival #464",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Talk about a difficult decision #465",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  },
+  {
+    "title": "Explain a person you admire #466",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "technology"
+  },
+  {
+    "title": "Discuss a future goal #467",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "education"
+  },
+  {
+    "title": "Talk about a life lesson #468",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "self-development"
+  },
+  {
+    "title": "Explain a life lesson #469",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a communication challenge #470",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "relationships"
+  },
+  {
+    "title": "Discuss a family tradition #471",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Explain a movie that inspired you #472",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "title": "Describe a childhood memory #473",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Describe a movie that inspired you #474",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Describe a movie that inspired you #475",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "health"
+  },
+  {
+    "title": "Explain social media influence #476",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "medium",
+    "category": "relationships"
+  },
+  {
+    "title": "Share your opinion about climate change #477",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about a childhood memory #478",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "title": "Talk about a health habit #479",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about a public event #480",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Talk about a time you felt proud #481",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "title": "Describe a communication challenge #482",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Explain a difficult decision #483",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "title": "Discuss a technological invention #484",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a childhood memory #485",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "education"
+  },
+  {
+    "title": "Explain climate change #486",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Describe a volunteering activity #487",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "personal"
+  },
+  {
+    "title": "Discuss a leadership experience #488",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "easy",
+    "category": "health"
+  },
+  {
+    "title": "Share your opinion about a future goal #489",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "environment"
+  },
+  {
+    "title": "Share your opinion about a time you felt proud #490",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "easy",
+    "category": "career"
+  },
+  {
+    "title": "Describe a volunteering activity #491",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "title": "Share your opinion about your dream career #492",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "self-development"
+  },
+  {
+    "title": "Discuss a health habit #493",
+    "cuePoints": [
+      "When it happened",
+      "What you did",
+      "What you learned"
+    ],
+    "difficulty": "medium",
+    "category": "health"
+  },
+  {
+    "title": "Discuss a life lesson #494",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Discuss your dream career #495",
+    "cuePoints": [
+      "Background",
+      "Key details",
+      "Outcome"
+    ],
+    "difficulty": "easy",
+    "category": "society"
+  },
+  {
+    "title": "Share your opinion about a health habit #496",
+    "cuePoints": [
+      "Main idea",
+      "Examples",
+      "Conclusion"
+    ],
+    "difficulty": "hard",
+    "category": "entertainment"
+  },
+  {
+    "title": "Explain a movie that inspired you #497",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "society"
+  },
+  {
+    "title": "Share your opinion about a festival #498",
+    "cuePoints": [
+      "Causes",
+      "Effects",
+      "Solutions"
+    ],
+    "difficulty": "hard",
+    "category": "travel"
+  },
+  {
+    "title": "Describe a time you felt proud #499",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "medium",
+    "category": "entertainment"
+  },
+  {
+    "title": "Share your opinion about a historical event #500",
+    "cuePoints": [
+      "Experience",
+      "Feelings",
+      "Impact"
+    ],
+    "difficulty": "hard",
+    "category": "lifestyle"
+  }
+]

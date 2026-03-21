@@ -39,7 +39,7 @@ const userSchema=new mongoose.Schema(
             type:Number,
             default:0
         },
-        vocabularyScore:{
+        speakingScore:{
             type:Number,
             default:0
         },
@@ -47,6 +47,7 @@ const userSchema=new mongoose.Schema(
             type:Number,
             default:0
         },
+        
         profileImage:{
             type:String,
             default:""
