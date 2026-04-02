@@ -1,87 +1,130 @@
-//const FluencySentence=require('../models/FluencySentence');
-const Score=require('../models/Score');
-const {evaluateSpeaking}=require('../services/speakingAiService');
-const User=require('../models/User');
-const SpeakingTopic = require('../models/SpeakingTopic');
+const fs = require("fs");
+const Score = require("../models/Score");
+const User = require("../models/User");
+const SpeakingTopic = require("../models/SpeakingTopic");
 
-exports.speakingEvaluate=async(req,res)=>{
-    const {mode,topicId,userAnswer}=req.body;
+const { getPronunciation } = require("../services/pronunciationService");
+const { evaluateSpeaking } = require("../services/aiSpeakingService");
 
-    try{
-        const user=await User.findById(req.user.id);
-        if(!user){
-            return res.json("invalid user");
-        }
-        if(mode==='generate'){
-            const difficultyMap={
-                Beginner:"easy",
-                Intermediate:"medium",
-                Advanced:"hard"
-            };
-            const difficulty=difficultyMap[user.level];
-            const attempted = await Score.find({
-                userId: user._id,
-                exercise_type: "speaking",
-            }).select("topicId");
+// -----------------------------
+// Main speaking handler
+const speakingEvaluate = async (req, res) => {
+  const mode = req.body?.mode || req.query?.mode;
 
-            const attemptedIds=attempted.map((item)=>item.topicId);
+  try {
 
-            const topic=await SpeakingTopic.findOne({
-                difficulty:difficulty,
-                _id:{$nin:attemptedIds},
-            });
-             if (!topic) {
-                return res.json({
-                    message: "🎉 You have completed all topics in this level!",
-                });
-            }
-            return res.json({
-                topicId: topic._id,
-                title: topic.title,
-                cuePoints: topic.cuePoints,
-                difficulty: topic.difficulty,
-            });
-        }else if(mode==='evaluate'){
-            const aiResult=await evaluateSpeaking(userAnswer);
-            const score=new Score({
-                userId: req.user.id,
-                topicId: topicId,
-                exercise_type:'speaking',
-                user_input:userAnswer,
-                grammarScore:aiResult.grammarScore,
-                fluencyScore:aiResult.fluencyScore,
-                vocabularyScore:aiResult.vocabularyScore,
-                pronunciationScore:aiResult.pronunciationScore,
-                overallScore:aiResult.overallScore,
-                strengths:aiResult.strengths,
-                weaknesses:aiResult.weaknesses,
-                improved_version:aiResult.improved_version,
-            });
-            await score.save();
+    console.log("MODE:", mode);
+    console.log("Received file:", req.file);
+    console.log("Request body:", req.body);
 
-            const allFluencyScore=await Score.find(
-                {
-                    userId:req.user.id,
-                    exercise_type:'speaking'
-                }
-            );
-            const avg= allFluencyScore.length>0
-                 ?allFluencyScore.reduce((sum,item)=>sum+item.overallScore,0)/allFluencyScore.length
-                 :0;
 
-            await User.findByIdAndUpdate(req.user.id,{
-                speakingScore:Math.round(avg)
-            });
+    // 1️⃣ Fetch user
+    const user = await User.findById(req.user.id);
+    if (!user) return res.status(400).json({ message: "Invalid user" });
 
-            res.status(200).json(aiResult);
+    // -----------------------------
+    // 2️⃣ Generate mode: return new topic
+    if (mode === "generate") {
+      const difficultyMap = { Beginner: "easy", Intermediate: "medium", Advanced: "hard" };
+      const difficulty = difficultyMap[user.level];
 
-        }else{
-            return res.status(400).json({message:"invalid mode"});
-        }
-        
+      const attempted = await Score.find({ userId: user._id, exercise_type: "speaking" }).select("topicId");
+      const attemptedIds = attempted.map(item => item.topicId);
 
-    }catch(err){
-        console.log(err);
-        res.status(500).json({message:err.message});
+      const topic = await SpeakingTopic.findOne({
+        difficulty,
+        _id: { $nin: attemptedIds },
+      });
+
+      if (!topic)
+        return res.json({ message: "🎉 You have completed all topics in this level!" });
+
+      return res.json({
+        topicId: topic._id,
+        title: topic.title,
+        cuePoints: topic.cuePoints,
+        difficulty: topic.difficulty,
+      });
     }
-}
+
+    // -----------------------------
+    // 3️⃣ Evaluate mode: process audio
+    else if (mode === "evaluate") {
+      if (!req.file) return res.status(400).json({ message: "Audio file required" });
+      if (!req.body.sentence) return res.status(400).json({ message: "Sentence required" });
+
+      const audioPath = req.file.path;
+      const sentence = req.body.sentence;
+      const topicId = req.body.topicId;
+
+      // Pronunciation evaluation
+      const pronunciationRes = await getPronunciation(audioPath, sentence);
+      const spokenText = pronunciationRes.text;
+
+      if (!spokenText?.trim())
+        return res.status(400).json({ message: "Speech not detected. Please speak clearly." });
+
+      // AI Evaluation (text)
+      const topic = await SpeakingTopic.findById(topicId);
+      const aiResult = await evaluateSpeaking(spokenText, topic);
+
+      // Compute overall score
+      const overallScore = Number(
+        ((aiResult.grammarScore + aiResult.fluencyScore + aiResult.vocabularyScore + aiResult.pronunciationScore+aiResult.confidenceScore) / 5).toFixed(2)
+      );
+
+      // Save score
+      const score = new Score({
+        userId: user._id,
+        topicId,
+        exercise_type: "speaking",
+        user_input: spokenText,
+        grammarScore: aiResult.grammarScore,
+        fluencyScore: aiResult.fluencyScore,
+        vocabularyScore: aiResult.vocabularyScore,
+        pronunciationScore: aiResult.pronunciationScore,
+        confidenceScore:aiResult.confidenceScore,
+        overallScore,
+        strengths: aiResult.strengths,
+        weaknesses: aiResult.weaknesses,
+        improved_version: aiResult.improved_version,
+      });
+
+      await score.save();
+
+      // Update user's average speaking score
+      const allScores = await Score.find({ userId: user._id, exercise_type: "speaking" });
+      const avg = allScores.length
+        ? allScores.reduce((sum, item) => sum + item.overallScore, 0) / allScores.length
+        : 0;
+      await User.findByIdAndUpdate(user._id, { speakingScore: Math.round(avg) });
+
+      // Delete audio file after processing
+      if (fs.existsSync(audioPath)) fs.unlinkSync(audioPath);
+
+      // Response
+      return res.status(200).json({
+        spoken_text: spokenText,
+        grammarScore: aiResult.grammarScore,
+        fluencyScore: aiResult.fluencyScore,
+        vocabularyScore: aiResult.vocabularyScore,
+        pronunciationScore: aiResult.pronunciationScore,
+        confidenceScore:aiResult.confidenceScore,
+        overallScore,
+        strengths: aiResult.strengths,
+        weaknesses: aiResult.weaknesses,
+        improved_version: aiResult.improved_version,
+        
+      });
+    }
+
+    // Invalid mode
+    else return res.status(400).json({ message: "Invalid mode" });
+
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: err.message });
+  }
+};
+
+module.exports = { speakingEvaluate };

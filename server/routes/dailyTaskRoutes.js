@@ -1,10 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const {getDailyTasks} = require('../controllers/dailyTaskController');
-const authMiddleware = require('../middleware/authMiddleware');
+const {getDailyTasks,completeTask} = require('../controllers/dailyTaskController');
 
-router.get('/', authMiddleware, getDailyTasks);
+const verifyToken = require("../middleware/authMiddleware");
+
+router.post("/complete/:taskId", verifyToken, completeTask);
+router.get('/', verifyToken, getDailyTasks);
+router.post("/complete/:taskId", verifyToken, completeTask);
 
 
 module.exports = router;

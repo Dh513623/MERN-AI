@@ -1,5 +1,52 @@
+const Score = require('../models/Score');
+const User = require("../models/User");
 
-const Score=require('../models/Score');
+async function updateUserLevelWeekly(userId) {
+  console.log("🔍 Checking user:", userId);
+
+  const now = new Date();
+  const lastWeek = new Date();
+  lastWeek.setDate(now.getDate() - 7);
+
+  const scores = await Score.find({
+    userId,
+    createdAt: { $gte: lastWeek },
+  });
+
+  console.log("📊 Scores found:", scores.length);
+
+  if (!scores.length) return;
+
+  // ✅ FIX HERE
+  const validScores = scores
+    .map(s => {
+      if (s.exercise_type === "speaking") return s.overallScore;
+      return s.score;
+    })
+    .filter(val => val !== undefined && val !== null);
+
+  if (!validScores.length) return;
+
+  console.log("📊 Actual Scores:", validScores);
+
+  const avg =
+    validScores.reduce((sum, val) => sum + val, 0) /
+    validScores.length;
+
+  console.log("📈 Average Score:", avg);
+
+  let level = "Beginner";
+
+  if (avg >= 6) level = "Advanced";
+  else if (avg >= 3) level = "Intermediate";
+
+  console.log("🎯 New Level:", level);
+
+  await User.findByIdAndUpdate(userId, { level });
+
+  return { avg, level };
+}
+
 async function generateTodayPlan(userId) {
   const latestScore = await Score.findOne({
     userId,
@@ -51,4 +98,4 @@ async function generateTodayPlan(userId) {
   };
 }
 
-module.exports = { generateTodayPlan };
+module.exports = { updateUserLevelWeekly,generateTodayPlan };

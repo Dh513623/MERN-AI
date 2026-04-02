@@ -1,46 +1,43 @@
-const DailyTask = require('../models/DailyTask');
-const SpeakingTopic = require('../models/SpeakingTopic');
-const FluencySentence = require('../models/FluencySentence');
+const { createDailyTaskForUser } = require("../services/dailyTaskService");
+const Score = require("../models/Score");
 
-exports.getDailyTasks = async (req,res)=>{
+exports.getDailyTasks = async (req, res) => {
+  try {
+    const tasks = await createDailyTaskForUser(req.user.id);
+    res.json(tasks);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: err.message });
+  }
+};
 
- try{
+exports.completeTask = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const taskId = req.params.taskId;
 
     const today = new Date().toISOString().split("T")[0];
+    const daily = await DailyTask.findOne({ userId, date: today });
 
-    let tasks = await DailyTask.findOne({
-        userId:req.user.id,
-        date:today
+    if (!daily) return res.status(404).json({ message: "No tasks found for today" });
+
+    const task = daily.tasks.id(taskId);
+    if (!task) return res.status(404).json({ message: "Task not found" });
+
+    task.completed = true;
+    await daily.save();
+
+    // Update Score
+    await Score.create({
+      userId,
+      exercise_type: task.type,
+      score: 1,
+      createdAt: new Date(),
     });
 
-    if(tasks){
-        return res.json(tasks);
-    }
-
-    const speaking = await SpeakingTopic.aggregate([{ $sample:{size:1}}]);
-    const fluency = await FluencySentence.aggregate([{ $sample:{size:1}}]);
-
-    const newTasks = new DailyTask({
-        userId:req.user.id,
-        date:today,
-        tasks:[
-            {
-                type:"speaking",
-                taskId:speaking[0]._id
-            },
-            {
-                type:"fluency",
-                taskId:fluency[0]._id
-            }
-        ]
-    });
-
-    await newTasks.save();
-
-    res.json(newTasks);
-
- }catch(err){
-    res.status(500).json({message:err.message});
- }
-
+    res.json({ message: "Task marked as completed", task });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: err.message });
+  }
 };

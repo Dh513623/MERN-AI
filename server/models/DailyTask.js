@@ -1,34 +1,42 @@
 const mongoose = require("mongoose");
 
-const dailySchema = new mongoose.Schema(
-  {
-    userId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true
-    },
-    date: {
-      type: String,
-      required: true
-    },
-    tasks: [
-      {
-        type: {
-          type: String,
-          enum: ["grammar", "speaking", "fluency", "pronunciation"],
-          required: true
-        },
-        taskId: {
-          type: mongoose.Schema.Types.ObjectId,
-        },
-        completed: {
-          type: Boolean,
-          default: false
-        },
-      },
-    ],
+const TaskSchema = new mongoose.Schema({
+  type: {
+    type: String,
+    enum: ["grammar", "speaking", "fluency", "pronunciation", "vocabulary"],
+    required: true
   },
-  { timestamps: true },
-);
+  taskId: {
+    type: mongoose.Schema.Types.ObjectId, // reference to actual task
+  },
+  completed: {
+    type: Boolean,
+    default: false
+  },
+  adaptiveTasks: [   // store adaptive tasks for weak skill
+    {
+      task: { type: String },
+      count: { type: Number },
+      duration: { type: String }
+    }
+  ]
+});
 
-module.exports = mongoose.model("DailyTask", dailySchema);
+const DailyTaskSchema = new mongoose.Schema({
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true
+  },
+  date: {
+    type: String, // YYYY-MM-DD
+    required: true
+  },
+  weakSkill: {  // store today's weak skill
+    type: String,
+    enum: ["grammar", "speaking", "fluency", "pronunciation", "vocabulary"]
+  },
+  tasks: [TaskSchema]
+}, { timestamps: true });
+
+module.exports = mongoose.model("DailyTask", DailyTaskSchema);
