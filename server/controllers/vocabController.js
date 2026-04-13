@@ -127,13 +127,24 @@ User input:
 TASK:
 
 For EACH pair:
-
 STEP 1 — Evaluate USER word:
+
 - Compare ONLY the USER word with the BASE word
 - Decide based on MEANING (not spelling)
-- If meanings are same or very similar → "correct"
-- If meanings are different or unrelated → "wrong"
-- If user word is empty → "wrong"
+
+IMPORTANT EXAMPLES (FOLLOW STRICTLY):
+
+Base: break | User: destroy → partial  
+Base: break | User: damage → partial  
+Base: notice | User: observe → partial  
+Base: easygoing | User: relaxed → partial  
+
+RULES:
+- If meanings are very close → "correct"
+- If meanings are related but not exact → "partial"
+- If meanings are clearly different → "wrong"
+- NEVER mark related words as "wrong"
+- Prefer "partial" over "wrong" when in doubt
 
 STEP 2 — Generate new_word:
 - new_word MUST be a synonym (or closely related word) of the BASE word
@@ -230,12 +241,21 @@ OUTPUT ONLY JSON:
           feedback: "Could not parse AI response.",
         },
       ];
-    }
+    }// after AI parsing success/fallback
+const TOTAL_QUESTIONS = 3;
 
-    const TOTAL_QUESTIONS = 3;
-    const correctCount = results.filter((r) => r.result === "correct").length;
-    const finalScore = Number(((correctCount / TOTAL_QUESTIONS) * 10).toFixed(2));
+// ✅ MISSING LINE (FIX)
+const correctCount = results.filter(
+  (r) => r.result === "correct"
+).length;
 
+// scoring
+const totalMark = (correctCount / TOTAL_QUESTIONS) * 5;
+
+const finalScore = Math.min(
+  Number((5 + totalMark).toFixed(2)),
+  10
+);
     await Score.create({
       userId,
       exercise_type: "vocabulary",
