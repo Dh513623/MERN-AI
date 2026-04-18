@@ -28,6 +28,10 @@ const userSchema=new mongoose.Schema(
             type:Number,
             default:0
         },
+        maxStreak: {
+            type: Number,
+            default: 0
+        },
         lastActiveDate:{
             type:Date
         },
@@ -59,17 +63,20 @@ const userSchema=new mongoose.Schema(
     {timestamps:true} 
 );
 
-userSchema.pre("save",async function(){
-    if(!this.isModified("password")) return next();
-    try{
-        const salt=await bcrypt.genSalt(10);
-        this.password=await bcrypt.hash(this.password,salt);
-        console.log("Password hashed successfully");   
-    }catch(err){
-        console.log(err);
-    }
-});
+userSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
 
+  try {
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+    console.log("Password hashed successfully");
+  } catch (err) {
+    console.log(err);
+    return next(err); // ✅ pass error
+  }
+
+  next(); // ✅ move to next middleware
+});
 userSchema.methods.comparePassword= async function(plainPassword){
     return bcrypt.compare(plainPassword,this.password);
 } 

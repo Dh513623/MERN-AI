@@ -1,12 +1,16 @@
 const { getProgressByModule } = require("../utils/progressUtils");
 
 const { computeUserProgress } = require("../services/progressService");
+const { updateStreak } = require("../services/streakService");
 
-exports.getFullReport = async (req, res) => {
+const { getWeeklyData } = require("../utils/weeklyUtils");
+
+exports.updateUserStreak = async (req, res) => {
   try {
-    const report = await computeUserProgress(req.params.userId);
-    res.json(report);
+    const user = await updateStreak(req.params.userId);
+    res.json(user);
   } catch (err) {
+    console.error("STREAK ERROR:", err);  // 🔥 ADD THIS
     res.status(500).json({ message: err.message });
   }
 };
@@ -127,3 +131,43 @@ else doc.text("⚠️ Improve Fluency");
     res.status(500).json({ message: "PDF generation failed" });
   }
 };
+
+exports.getFullReport = async (req, res) => {
+  try {
+    const userId = req.params.userId;
+
+    const grammar = await getProgressByModule(userId, "grammar");
+    const vocabulary = await getProgressByModule(userId, "vocabulary");
+    const pronunciation = await getProgressByModule(userId, "pronunciation");
+    const speaking = await getProgressByModule(userId, "speaking");
+    const fluency = await getProgressByModule(userId, "fluency");
+
+    const gWeek = getWeeklyData(grammar, "grammar");
+    const vWeek = getWeeklyData(vocabulary, "vocabulary");
+    const pWeek = getWeeklyData(pronunciation, "pronunciation");
+    const sWeek = getWeeklyData(speaking, "speaking");
+    const fWeek = getWeeklyData(fluency, "fluency");
+
+    // 🔥 Merge all modules into single weekly array
+    const weekly = gWeek.map((dayData, i) => ({
+      day: dayData.day,
+      grammar: dayData.grammar,
+      vocabulary: vWeek[i].vocabulary,
+      pronunciation: pWeek[i].pronunciation,
+      speaking: sWeek[i].speaking,
+      fluency: fWeek[i].fluency,
+    }));
+
+    // existing overall report
+    const report = await computeUserProgress(userId);
+
+    res.json({
+      ...report,
+      weekly   // 🔥 THIS is what frontend needs
+    });
+
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+

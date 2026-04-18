@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { useEffect } from "react";
 import {
   HiOutlineHome,
   HiOutlineAcademicCap,
@@ -29,9 +30,28 @@ const navItems = [
   { path: '/adaptive', label: 'Adaptive', icon: FaBrain },
 ];
 
+
 export default function Sidebar({ isOpen, onClose }) {
-  const { user, logout } = useAuth();
+  const { user, setUser, logout } = useAuth();
   const navigate = useNavigate();
+
+  // ✅ ADD HERE 👇
+  useEffect(() => {
+  const updateStreak = async () => {
+    if (user?._id) {
+      const res = await fetch(`/api/progress/update-streak/${user._id}`, {
+        method: "POST"
+      });
+
+      const updatedUser = await res.json();
+
+      // 🔥 THIS LINE FIXES YOUR ISSUE
+      setUser(updatedUser);
+    }
+  };
+
+  updateStreak();
+}, [user?._id]);
 
   const handleLogout = () => {
     logout();
@@ -72,21 +92,34 @@ export default function Sidebar({ isOpen, onClose }) {
 
         {/* User Info */}
         {user && (
-          <div className="px-6 py-4 border-b border-dark-700/50">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-400 to-purple-500 flex items-center justify-center text-white font-semibold text-sm">
-                {user.name?.charAt(0)?.toUpperCase() || 'U'}
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-white truncate">{user.name}</p>
-                <p className="text-xs text-dark-400 truncate">{user.level || 'Beginner'}</p>
-              </div>
-            </div>
-            <div className="mt-3 flex items-center gap-2">
-              <span className="badge-primary">🔥 {user.dailyStreak || 0} day streak</span>
-            </div>
-          </div>
-        )}
+  <div className="px-6 py-4 border-b border-dark-700/50">
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-400 to-purple-500 flex items-center justify-center text-white font-semibold text-sm">
+        {user.name?.charAt(0)?.toUpperCase() || 'U'}
+      </div>
+
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-semibold text-white truncate">
+          {user.name}
+        </p>
+        <p className="text-xs text-dark-400 truncate">
+          {user.level || 'Beginner'}
+        </p>
+      </div>
+    </div>
+
+    {/* 🔥 STREAK SECTION */}
+    <div className="mt-3 flex flex-col items-start gap-1">
+  <span className="badge-primary block">
+    🔥 {user.dailyStreak || 0} day streak
+  </span>
+
+  <span className="block text-xs text-gray-400">
+    🏆 Max streak: {user.maxStreak || 0} days
+  </span>
+</div>
+  </div>
+)}
 
         {/* Navigation */}
         <nav className="flex-1 overflow-y-auto py-4 px-3">

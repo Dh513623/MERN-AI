@@ -40,6 +40,7 @@ export default function Dashboard() {
     };
     fetchTasks();
   }, []);
+  
 
   const levelConfig = {
     Beginner: { color: 'from-emerald-400 to-teal-500', bg: 'bg-emerald-500/15', text: 'text-emerald-400' },

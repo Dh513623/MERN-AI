@@ -91,6 +91,15 @@ exports.getDailyGrammarTest = async (req, res) => {
       ...shuffleArray(errorCorrectionAll).slice(0, 5),
       ...shuffleArray(rearrangeAll).slice(0, 5)
     ];
+    const formattedQuestions = finalQuestions.map(q => {
+  if (q.type === "rearrange") {
+    return {
+      ...q._doc,
+      question: q.question.join(" ") // ✅ ADD SPACE HERE
+    };
+  }
+  return q;
+});
 
     return res.status(200).json({
       success: true,
@@ -160,19 +169,31 @@ exports.submitDailyGrammarTest = async (req, res) => {
       const question = questionMap.get(item.questionId);
       if (!question) continue;
 
-      const userAnswer = (item.user_input || "").trim().toLowerCase();
-      const correctAnswer = question.answer.trim().toLowerCase();
+      const normalize = (str) => {
+  return str
+    .toLowerCase()
+    .replace(/[^\w\s]/g, "") // removes .,!? etc
+    .replace(/\s+/g, " ")
+    .trim();
+};
+
+const userAnswer = normalize(item.user_input || "");
+const correctAnswer = normalize(question.answer);
 
       const isCorrect = userAnswer === correctAnswer;
 
       if (isCorrect) correctCount++;
-
-      resultDetails.push({
-        question: question.question,
-        correctAnswer: question.answer,
-        userAnswer: item.user_input,
-        isCorrect
-      });
+resultDetails.push({
+  question:
+    question.type === "rearrange"
+      ? (Array.isArray(question.question)
+          ? question.question.join(" ")
+          : question.question)
+      : question.question,
+  correctAnswer: question.answer,
+  userAnswer: item.user_input,
+  isCorrect
+});
     }
 
     const finalScore = Number(((correctCount / 15) * 10).toFixed(2));
