@@ -1,9 +1,8 @@
-
-
 const Score = require("../models/Score");
 const Vocabulary = require("../models/VocabularySchema");
 const axios = require("axios");
 const User = require("../models/User");
+const DailyTask = require("../models/DailyTask");
 
 const getTodayRange = () => {
   const start = new Date();
@@ -30,13 +29,13 @@ exports.getVocabulary = async (req, res) => {
     const alreadyAttempted = await Score.findOne({
       userId,
       exercise_type: "vocabulary",
-      date: { $gte: start, $lte: end }
+      date: { $gte: start, $lte: end },
     });
 
     if (alreadyAttempted) {
       return res.status(200).json({
         success: false,
-        message: "You already attempted today. Try tomorrow."
+        message: "You already attempted today. Try tomorrow.",
       });
     }
 
@@ -44,7 +43,7 @@ exports.getVocabulary = async (req, res) => {
     const getOneWord = async (difficulty) => {
       const result = await Vocabulary.aggregate([
         { $match: { difficulty } },
-        { $sample: { size: 1 } }
+        { $sample: { size: 1 } },
       ]);
       return result[0];
     };
@@ -57,46 +56,37 @@ exports.getVocabulary = async (req, res) => {
     // ❗ Safety check
     if (!easy || !medium || !hard) {
       return res.status(400).json({
-        message: "Not enough words in database"
+        message: "Not enough words in database",
       });
     }
 
-    // ✅ Send only word field (clean response) 
+    // ✅ Send only word field (clean response)
     return res.status(200).json({
       success: true,
       words: {
         easy: easy.word,
         medium: medium.word,
-        hard: hard.word
-      }
+        hard: hard.word,
+      },
     });
-
   } catch (err) {
     console.error("VOCAB ERROR:", err);
     return res.status(500).json({
       message: "Server Error",
-      error: err.message
+      error: err.message,
     });
   }
 };
 
-
 // ✅ Submit vocabulary test (router + scoring + DB)
-const API_KEY = process.env.HF_API_KEY;
+const API_KEY = process.env.HUGGINGFACE_API_KEY;
 
 exports.submitVocabularyTest = async (req, res) => {
   try {
     console.log("REQ BODY:", req.body);
 
-    const {
-      userId,
-      w1_base,
-      w1_user,
-      w2_base,
-      w2_user,
-      w3_base,
-      w3_user,
-    } = req.body;
+    const { userId, w1_base, w1_user, w2_base, w2_user, w3_base, w3_user } =
+      req.body;
 
     if (!userId) {
       return res.status(400).json({ message: "userId is required" });
@@ -115,7 +105,6 @@ exports.submitVocabularyTest = async (req, res) => {
 
     const HF_URL = "https://router.huggingface.co/v1/chat/completions";
     const MODEL = "meta-llama/Meta-Llama-3-8B-Instruct";
-    
 
     const prompt = `You are an English vocabulary tutor helping a learner.
 
@@ -172,17 +161,69 @@ Before giving answer:
 - Ensure result is based on USER word meaning
 - Ensure new_word is different from USER word
 
-OUTPUT ONLY JSON:
+OUTPUT FORMAT (STRICT – NON-NEGOTIABLE):
+
+You are NOT allowed to write anything except a JSON array.
+
+HARD RULE:
+If you add any explanation, headings, or text outside JSON, your response is INVALID.
+
+Return ONLY a valid JSON array with EXACTLY 3 objects.
+
+No text before JSON.
+No text after JSON.
+No markdown.
+No explanations.
+No comments.
+No code blocks.
+
+The response MUST start with [ and end with ].
+
+Each object must follow EXACTLY this structure:
+
+{
+  "result": "correct" | "partial" | "wrong",
+  "new_word": "string (single word only)",
+  "example": "string (one simple sentence using new_word)",
+  "feedback": "string (ONLY compare base word vs user word)"
+}
+
+STRICT RULES:
+- Exactly 3 objects only (no more, no less)
+- All 3 objects must be valid JSON
+- No trailing commas allowed
+- "new_word" must be a SINGLE word only
+- "example" must use ONLY "new_word"
+- Do NOT include base word in "example"
+- "feedback" must NOT mention new_word meaning explanation
+- No extra keys allowed
+
+FINAL OUTPUT MUST LOOK LIKE THIS:
+
 [
   {
-    "result": "correct|wrong",
-    "new_word": "a different synonym of base",
-    "example": "simple sentence using new_word",
-    "feedback": "short explanation about USER word"
+    "result": "correct",
+    "new_word": "sit",
+    "example": "She sits on the chair.",
+    "feedback": "User word has similar meaning to base word."
+  },
+  {
+    "result": "partial",
+    "new_word": "stay",
+    "example": "He will stay here.",
+    "feedback": "User word is related but not exact."
+  },
+  {
+    "result": "wrong",
+    "new_word": "run",
+    "example": "He runs fast.",
+    "feedback": "User word has different meaning from base word."
   }
 ]
-`;
 
+REMEMBER:
+ONLY JSON ARRAY. NOTHING ELSE.
+`;
 
     const hfResponse = await axios.post(
       HF_URL,
@@ -203,59 +244,47 @@ OUTPUT ONLY JSON:
           "Content-Type": "application/json",
         },
         timeout: 60000,
-      }
+      },
     );
 
     const aiText = hfResponse.data?.choices?.[0]?.message?.content || "";
     console.log("AI RAW:", aiText);
 
     let results;
+
     try {
-      const startIdx = aiText.indexOf("[");
-      const endIdx = aiText.lastIndexOf("]") + 1;
-      if (startIdx !== -1 && endIdx !== -1) {
-        const jsonString = aiText.substring(startIdx, endIdx);
-        results = JSON.parse(jsonString);
-      } else {
-        throw new Error("JSON not found in AI response");
+      console.log("AI RAW:", aiText);
+
+      const start = aiText.indexOf("[");
+      const end = aiText.lastIndexOf("]");
+
+      if (start === -1 || end === -1) {
+        throw new Error("No JSON array found");
       }
+
+      const jsonString = aiText.slice(start, end + 1);
+
+      console.log("CLEAN JSON:", jsonString);
+
+      results = JSON.parse(jsonString);
     } catch (e) {
-      console.warn("AI JSON parse failed, using default results:", e.message);
+      console.warn("AI JSON parse failed:", e.message);
+
       results = [
-        {
-          result: "wrong",
-          new_word: "",
-          example: "",
-          feedback: "Could not parse AI response.",
-        },
-        {
-          result: "wrong",
-          new_word: "",
-          example: "",
-          feedback: "Could not parse AI response.",
-        },
-        {
-          result: "wrong",
-          new_word: "",
-          example: "",
-          feedback: "Could not parse AI response.",
-        },
+        { result: "wrong", new_word: "", example: "", feedback: "Parse error" },
+        { result: "wrong", new_word: "", example: "", feedback: "Parse error" },
+        { result: "wrong", new_word: "", example: "", feedback: "Parse error" },
       ];
-    }// after AI parsing success/fallback
-const TOTAL_QUESTIONS = 3;
+    }
+    const TOTAL_QUESTIONS = 3;
 
-// ✅ MISSING LINE (FIX)
-const correctCount = results.filter(
-  (r) => r.result === "correct"
-).length;
+    // ✅ MISSING LINE (FIX)
+    const correctCount = results.filter((r) => r.result === "correct").length;
 
-// scoring
-const totalMark = (correctCount / TOTAL_QUESTIONS) * 5;
+    // scoring
+    const totalMark = (correctCount / TOTAL_QUESTIONS) * 5;
 
-const finalScore = Math.min(
-  Number((5 + totalMark).toFixed(2)),
-  10
-);
+    const finalScore = Math.min(Number((5 + totalMark).toFixed(2)), 10);
     await Score.create({
       userId,
       exercise_type: "vocabulary",
@@ -267,6 +296,17 @@ const finalScore = Math.min(
       date: new Date(),
     });
 
+    await DailyTask.updateOne(
+  {
+    userId,
+    "tasks.type": "vocabulary",
+  },
+  {
+    $set: {
+      "tasks.$.completed": true,
+    },
+  }
+);
     const allScores = await Score.find({ userId, exercise_type: "vocabulary" });
     const total = allScores.reduce((sum, s) => sum + s.score, 0);
     const average = Number((total / allScores.length).toFixed(2));

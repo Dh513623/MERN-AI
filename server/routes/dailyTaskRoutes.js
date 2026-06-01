@@ -7,7 +7,7 @@ const verifyToken = require("../middleware/authMiddleware");
 
 router.post("/complete/:taskId", verifyToken, completeTask);
 router.get('/', verifyToken, getDailyTasks);
-router.post("/complete/:taskId", verifyToken, completeTask);
+
 
 
 module.exports = router;

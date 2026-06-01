@@ -73,10 +73,6 @@ const scoreSchema = new mongoose.Schema({
   improved_version: {
     type: String,
     required: true
-  },
-  date:{
-    type:Date,
-    default:Date.now
   }
 },{timestamps:true}
 );

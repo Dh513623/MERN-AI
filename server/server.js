@@ -24,6 +24,8 @@ const vocabRoutes = require("./routes/vocabRoutes");
 const progressRoutes = require("./routes/progressRoutes");
 const dailyTaskRoutes = require("./routes/dailyTaskRoutes");
 const speakingRoutes = require("./routes/speakingRoutes");
+const fluencyRoutes = require("./routes/fluencyRoutes");
+
 
 
 
@@ -35,6 +37,7 @@ app.use("/api/vocab", vocabRoutes);
 app.use("/api/progress", progressRoutes);
 app.use("/api/daily-tasks", dailyTaskRoutes);
 app.use("/api/speaking", speakingRoutes);
+app.use("/api/fluency", fluencyRoutes);
 
 
 

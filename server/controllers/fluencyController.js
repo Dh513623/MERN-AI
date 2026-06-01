@@ -2,32 +2,54 @@ const FluencySentence=require('../models/FluencySentence');
 const Score=require('../models/Score');
 const {evaluateFluency}=require('../services/fluencyAiService');
 const User=require('../models/User');
+const fs = require("fs");
+const { getPronunciation } = require("../services/pronunciationService");
 
 exports.fluencyEvaluate=async(req,res)=>{
     const {mode,starter,sentences,userAnswer}=req.body;
 
     try{
-        if(mode==='generate'){
-            const starterArr=await FluencySentence.aggregate([
-                {$match:{type:'starter'}},
-                {$sample:{size:1}}
-            ]);
-            const simpleArr=await FluencySentence.aggregate([
-                {$match:{type:'simple'}},
-                {$sample:{size:2}}
-            ]);
-            const repetitionArr=await FluencySentence.aggregate([
-                {$match:{type:'repetition'}},
-                {$sample:{size:1}}
-            ]);
+        if (mode === "generate") {
 
-            const exercise={
-                starter:starterArr[0].text,
-                sentences:[simpleArr[0].text, simpleArr[1].text, repetitionArr[0].text],
-                instruction:"combine,expand,remove repetition and develop a story containing minimum of 7-8lines"
-            };
-            res.json({exercise,message:"exercise generated successfully!"});
-        }else if(mode==='evaluate'){
+  const starterArr = await FluencySentence.aggregate([
+    { $match: { type: "starter" } },
+    { $sample: { size: 1 } }
+  ]);
+
+  const simpleArr = await FluencySentence.aggregate([
+    { $match: { type: "simple" } },
+    { $sample: { size: 2 } }
+  ]);
+
+  const repetitionArr = await FluencySentence.aggregate([
+    { $match: { type: "repetition" } },
+    { $sample: { size: 1 } }
+  ]);
+
+  // ❗ safety checks (IMPORTANT)
+  if (!starterArr.length || simpleArr.length < 2 || !repetitionArr.length) {
+    return res.status(404).json({
+      message: "Not enough fluency data in DB"
+    });
+  }
+
+  const exercise = {
+    starter: starterArr[0].text,
+    sentences: [
+      simpleArr[0].text,
+      simpleArr[1].text,
+      repetitionArr[0].text
+    ],
+    instruction:
+      "combine,expand,remove repetition and develop a story containing minimum of 7-8 lines"
+  };
+
+  return res.json({
+    exercise,
+    message: "exercise generated successfully!"
+  });
+}else if(mode==='evaluate'){
+            
             const aiResult=await evaluateFluency(userAnswer);
             const score=new Score({
                 userId: req.user.id,

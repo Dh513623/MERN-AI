@@ -129,7 +129,7 @@ export default function Dashboard() {
           </div>
         ) : tasks.length > 0 ? (
           <div className="space-y-3">
-            {tasks.slice(0, 4).map((task, i) => (
+            {tasks.slice(0, 5).map((task, i) => (
               <div key={task._id || i} className="flex items-center gap-3 p-3 rounded-xl bg-dark-800/50 hover:bg-dark-800 transition-colors">
                 <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0
                   ${task.completed ? 'bg-emerald-500/20' : 'bg-dark-700'}`}>

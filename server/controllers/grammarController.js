@@ -1,7 +1,7 @@
 const GrammarExercise = require("../models/grammarSchema");
 const Score = require("../models/Score");
 const User = require("../models/User");
-
+const DailyTask = require("../models/DailyTask");
 /**
  * Helper → Today's date range
  */
@@ -41,29 +41,30 @@ exports.getDailyGrammarTest = async (req, res) => {
     const already = await Score.findOne({
       userId,
       exercise_type: "grammar",
-      date: { $gte: start, $lte: end }
+      source: "daily_grammar",
+      date: { $gte: start, $lte: end },
     });
 
     if (already) {
       return res.status(400).json({
-        message: "Already attempted today's grammar test"
+        message: "Already attempted today's grammar test",
       });
     }
 
     // Fetch all questions of each type
     const fillBlankAll = await GrammarExercise.find({
       module: "grammar",
-      type: "fill_blank"
+      type: "fill_blank",
     });
 
     const errorCorrectionAll = await GrammarExercise.find({
       module: "grammar",
-      type: "error_correction"
+      type: "error_correction",
     });
 
     const rearrangeAll = await GrammarExercise.find({
       module: "grammar",
-      type: "rearrange"
+      type: "rearrange",
     });
 
     console.log("Fill Blank Total:", fillBlankAll.length);
@@ -80,8 +81,8 @@ exports.getDailyGrammarTest = async (req, res) => {
         details: {
           fill_blank: fillBlankAll.length,
           error_correction: errorCorrectionAll.length,
-          rearrange: rearrangeAll.length
-        }
+          rearrange: rearrangeAll.length,
+        },
       });
     }
 
@@ -89,29 +90,28 @@ exports.getDailyGrammarTest = async (req, res) => {
     const finalQuestions = [
       ...shuffleArray(fillBlankAll).slice(0, 5),
       ...shuffleArray(errorCorrectionAll).slice(0, 5),
-      ...shuffleArray(rearrangeAll).slice(0, 5)
+      ...shuffleArray(rearrangeAll).slice(0, 5),
     ];
-    const formattedQuestions = finalQuestions.map(q => {
-  if (q.type === "rearrange") {
-    return {
-      ...q._doc,
-      question: q.question.join(" ") // ✅ ADD SPACE HERE
-    };
-  }
-  return q;
-});
+    const formattedQuestions = finalQuestions.map((q) => {
+      if (q.type === "rearrange") {
+        return {
+          ...q._doc,
+          question: q.question.join(" "), // ✅ ADD SPACE HERE
+        };
+      }
+      return q;
+    });
 
     return res.status(200).json({
       success: true,
-      totalQuestions: finalQuestions.length,
-      questions: finalQuestions
+      totalQuestions: formattedQuestions.length,
+      questions: formattedQuestions,
     });
-
   } catch (err) {
     console.error("GET ERROR:", err);
     return res.status(500).json({
       message: "Server Error",
-      error: err.message
+      error: err.message,
     });
   }
 };
@@ -127,38 +127,44 @@ exports.submitDailyGrammarTest = async (req, res) => {
 
     if (!userId || !answers) {
       return res.status(400).json({
-        message: "userId and answers are required"
+        message: "userId and answers are required",
       });
     }
 
     if (!Array.isArray(answers) || answers.length !== 15) {
       return res.status(400).json({
-        message: "You must submit exactly 15 answers"
+        message: "You must submit exactly 15 answers",
       });
     }
+
+    
+    const today = new Date().toISOString().split("T")[0];
+
+    
 
     const { start, end } = getTodayRange();
 
     const alreadyAttempted = await Score.findOne({
       userId,
       exercise_type: "grammar",
-      date: { $gte: start, $lte: end }
+      source: "daily_grammar",
+      date: { $gte: start, $lte: end },
     });
 
     if (alreadyAttempted) {
       return res.status(400).json({
-        message: "Already submitted today"
+        message: "Already submitted today",
       });
     }
 
-    const questionIds = answers.map(a => a.questionId);
+    const questionIds = answers.map((a) => a.questionId);
 
     const questions = await GrammarExercise.find({
-      _id: { $in: questionIds }
+      _id: { $in: questionIds },
     });
 
     const questionMap = new Map();
-    questions.forEach(q => {
+    questions.forEach((q) => {
       questionMap.set(q._id.toString(), q);
     });
 
@@ -170,30 +176,30 @@ exports.submitDailyGrammarTest = async (req, res) => {
       if (!question) continue;
 
       const normalize = (str) => {
-  return str
-    .toLowerCase()
-    .replace(/[^\w\s]/g, "") // removes .,!? etc
-    .replace(/\s+/g, " ")
-    .trim();
-};
+        return str
+          .toLowerCase()
+          .replace(/[^\w\s]/g, "") // removes .,!? etc
+          .replace(/\s+/g, " ")
+          .trim();
+      };
 
-const userAnswer = normalize(item.user_input || "");
-const correctAnswer = normalize(question.answer);
+      const userAnswer = normalize(item.user_input || "");
+      const correctAnswer = normalize(question.answer);
 
       const isCorrect = userAnswer === correctAnswer;
 
       if (isCorrect) correctCount++;
-resultDetails.push({
-  question:
-    question.type === "rearrange"
-      ? (Array.isArray(question.question)
-          ? question.question.join(" ")
-          : question.question)
-      : question.question,
-  correctAnswer: question.answer,
-  userAnswer: item.user_input,
-  isCorrect
-});
+      resultDetails.push({
+        question:
+          question.type === "rearrange"
+            ? Array.isArray(question.question)
+              ? question.question.join(" ")
+              : question.question
+            : question.question,
+        correctAnswer: question.answer,
+        userAnswer: item.user_input,
+        isCorrect,
+      });
     }
 
     const finalScore = Number(((correctCount / 15) * 10).toFixed(2));
@@ -201,17 +207,30 @@ resultDetails.push({
     await Score.create({
       userId,
       exercise_type: "grammar",
+      source: "daily_grammar",
       user_input: "Daily Grammar Test",
       score: finalScore,
       strengths: correctCount >= 10 ? ["Good grammar understanding"] : [],
       weaknesses: correctCount < 10 ? ["Needs improvement"] : [],
       improved_version: JSON.stringify(resultDetails),
-      date: new Date()
+      date: new Date(),
     });
+    await DailyTask.updateOne(
+      {
+        userId,
+        "tasks.type": "grammar",
+        "tasks.taskId": "daily-grammar",
+      },
+      {
+        $set: {
+          "tasks.$.completed": true,
+        },
+      },
+    );
 
     const allScores = await Score.find({
       userId,
-      exercise_type: "grammar"
+      exercise_type: "grammar",
     });
 
     const total = allScores.reduce((sum, s) => sum + s.score, 0);
@@ -219,7 +238,7 @@ resultDetails.push({
 
     await User.findByIdAndUpdate(userId, {
       grammarScore: average,
-      lastActiveDate: new Date()
+      lastActiveDate: new Date(),
     });
 
     return res.status(200).json({
@@ -227,14 +246,13 @@ resultDetails.push({
       correctAnswers: correctCount,
       finalScore,
       averageGrammarScore: average,
-      resultDetails
+      resultDetails,
     });
-
   } catch (err) {
     console.error("SUBMIT ERROR:", err);
     return res.status(500).json({
       message: "Server Error",
-      error: err.message
+      error: err.message,
     });
   }
 };

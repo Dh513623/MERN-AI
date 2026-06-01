@@ -7,11 +7,14 @@ const TaskSchema = new mongoose.Schema({
     required: true
   },
   taskId: {
-    type: mongoose.Schema.Types.ObjectId, // reference to actual task
+    type: mongoose.Schema.Types.Mixed // reference to actual task
   },
   completed: {
     type: Boolean,
     default: false
+  },
+  exercise: {
+    type: mongoose.Schema.Types.Mixed   // ✅ ADD THIS
   },
   adaptiveTasks: [   // store adaptive tasks for weak skill
     {

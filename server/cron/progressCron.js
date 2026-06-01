@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI, {
 .catch(err => console.error("❌ MongoDB connection error:", err));
 
 // Cron job: daily at midnight (change to * * * * * for testing every minute)
-cron.schedule("* * * * *", async () => {
+cron.schedule("0 0 * * *", async () => {
   console.log("📊 Running daily progress update");
 
   try {

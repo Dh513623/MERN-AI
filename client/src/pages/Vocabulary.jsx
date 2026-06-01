@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { getDailyVocab, submitVocabTest } from '../services/vocabService';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
 import ErrorAlert from '../components/ui/ErrorAlert';
 import ScoreRing from '../components/ui/ScoreRing';
 import { HiOutlineBookOpen, HiOutlineCheckCircle, HiOutlineXCircle } from 'react-icons/hi2';
+import { useLocation } from "react-router-dom"; 
 
 export default function Vocabulary() {
   const { user } = useAuth();
+  const location = useLocation();
   const [words, setWords] = useState(null);
   const [answers, setAnswers] = useState({ w1: '', w2: '', w3: '' });
   const [result, setResult] = useState(null);
@@ -15,6 +17,13 @@ export default function Vocabulary() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [blocked, setBlocked] = useState(false);
+
+
+  useEffect(() => {
+  if (location.state?.words) {
+    setWords(location.state.words);
+  }
+}, [location.state]);
 
   const startExercise = async () => {
     setError('');
@@ -26,7 +35,7 @@ export default function Vocabulary() {
         setError(res.data.message);
       } else {
         setWords(res.data.words);
-        console.log("WORDS FROM BACKEND:", words);
+        console.log("WORDS FROM BACKEND:", res.data.words);
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to load words');
