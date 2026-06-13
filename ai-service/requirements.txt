@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+openai-whisper
+torch
+numpy
+librosa
+g2p-en
+rapidfuzz
+python-multipart
+ffmpeg-python
