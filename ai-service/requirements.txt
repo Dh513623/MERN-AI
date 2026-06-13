@@ -1,7 +1,6 @@
 fastapi
 uvicorn
-openai-whisper
-torch
+faster-whisper
 numpy
 librosa
 g2p-en
