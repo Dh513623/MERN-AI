@@ -1,11 +1,10 @@
+
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import Response
 from faster_whisper import WhisperModel
 
 import tempfile
-import librosa
-import numpy as np
-
+import os
 
 from g2p_en import G2p
 from rapidfuzz import fuzz
@@ -13,14 +12,14 @@ from difflib import SequenceMatcher
 
 app = FastAPI()
 
-# -----------------------------
-# Basic routes
-# -----------------------------
+# ----------------------------------
+# Basic Routes
+# ----------------------------------
 
 @app.get("/")
 async def root():
     return {
-        "message": "AI service is running. Use POST /analyze to submit audio."
+        "message": "AI service is running. Use POST /analyze"
     }
 
 
@@ -34,9 +33,9 @@ async def chrome_devtools_probe():
     return Response(status_code=204)
 
 
-# -----------------------------
-# Lazy-load Whisper model
-# -----------------------------
+# ----------------------------------
+# Lazy Load Whisper
+# ----------------------------------
 
 model = None
 
@@ -45,7 +44,7 @@ def get_model():
     global model
 
     if model is None:
-        print("Loading Whisper model...")
+        print("Loading Faster Whisper Tiny...")
 
         model = WhisperModel(
             "tiny",
@@ -53,35 +52,35 @@ def get_model():
             compute_type="int8"
         )
 
-        print("Whisper model loaded.")
+        print("Model Loaded Successfully")
 
     return model
 
 
-# -----------------------------
+# ----------------------------------
 # G2P
-# -----------------------------
+# ----------------------------------
 
 g2p = G2p()
 
 
 def text_to_phonemes(text):
-    phonemes = g2p(text)
-    return " ".join(phonemes)
+    return " ".join(g2p(text))
 
 
-# -----------------------------
-# Phoneme comparison
-# -----------------------------
+# ----------------------------------
+# Compare Phonemes
+# ----------------------------------
 
 def compare_phonemes(expected_list, spoken_list):
+
     matcher = SequenceMatcher(
         None,
         expected_list,
         spoken_list
     )
 
-    result = []
+    results = []
 
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
 
@@ -99,18 +98,18 @@ def compare_phonemes(expected_list, spoken_list):
                 else ""
             )
 
-            result.append({
+            results.append({
                 "expected": exp,
                 "spoken": spo,
                 "status": "correct" if tag == "equal" else "wrong"
             })
 
-    return result
+    return results
 
 
-# -----------------------------
-# Analyze endpoint
-# -----------------------------
+# ----------------------------------
+# Analyze
+# ----------------------------------
 
 @app.post("/analyze")
 async def analyze(
@@ -118,22 +117,19 @@ async def analyze(
     sentence: str = Form(...)
 ):
 
-    with tempfile.NamedTemporaryFile(delete=False) as temp:
-        temp.write(await audio.read())
-        temp_path = temp.name
+    temp_path = None
 
     try:
 
-        print("TEMP FILE:", temp_path)
-        print("ORIGINAL FILE:", audio.filename)
+        with tempfile.NamedTemporaryFile(
+            delete=False,
+            suffix=".webm"
+        ) as temp:
 
-        # Optional validation
-        audio_data, sr = librosa.load(
-            temp_path,
-            sr=16000
-        )
+            temp.write(await audio.read())
+            temp_path = temp.name
 
-        print("LIBROSA SUCCESS")
+        print("Audio Saved:", temp_path)
 
         model = get_model()
 
@@ -146,68 +142,71 @@ async def analyze(
             segment.text for segment in segments
         ).strip()
 
-        print("WHISPER SUCCESS")
+        print("Recognized:", spoken_text)
+
+        expected_phoneme = text_to_phonemes(
+            sentence.lower()
+        )
+
+        spoken_phoneme = text_to_phonemes(
+            spoken_text.lower()
+        )
+
+        expected_list = expected_phoneme.split()
+        spoken_list = spoken_phoneme.split()
+
+        phoneme_comparison = compare_phonemes(
+            expected_list,
+            spoken_list
+        )
+
+        similarity = fuzz.ratio(
+            expected_phoneme,
+            spoken_phoneme
+        )
+
+        score = round(similarity / 10)
+
+        strengths = []
+        weaknesses = []
+
+        if score >= 8:
+            strengths.append(
+                "Excellent pronunciation"
+            )
+
+        elif score >= 5:
+            strengths.append(
+                "Good attempt"
+            )
+            weaknesses.append(
+                "Some pronunciation errors"
+            )
+
+        else:
+            weaknesses.append(
+                "Needs improvement in pronunciation"
+            )
+
+        return {
+            "text": spoken_text,
+            "score": score,
+            "expected_phoneme": expected_phoneme,
+            "spoken_phoneme": spoken_phoneme,
+            "phoneme_comparison": phoneme_comparison,
+            "strengths": strengths,
+            "weaknesses": weaknesses
+        }
 
     except Exception as e:
 
-        print("========== ERROR ==========")
-        print(type(e))
-        print(e)
-        print("==========================")
+        print("ERROR:", str(e))
 
-        raise e
+        return {
+            "error": str(e)
+        }
 
-    # Convert to phonemes
-    expected_phoneme = text_to_phonemes(
-        sentence.lower()
-    )
+    finally:
 
-    spoken_phoneme = text_to_phonemes(
-        spoken_text.lower()
-    )
-
-    expected_list = expected_phoneme.split()
-    spoken_list = spoken_phoneme.split()
-
-    phoneme_comparison = compare_phonemes(
-        expected_list,
-        spoken_list
-    )
-
-    similarity = fuzz.ratio(
-        expected_phoneme,
-        spoken_phoneme
-    )
-
-    score = round(similarity / 10)
-
-    strengths = []
-    weaknesses = []
-
-    if score >= 8:
-        strengths.append(
-            "Excellent pronunciation"
-        )
-
-    elif score >= 5:
-        strengths.append(
-            "Good attempt"
-        )
-        weaknesses.append(
-            "Some pronunciation errors"
-        )
-
-    else:
-        weaknesses.append(
-            "Needs improvement in pronunciation"
-        )
-
-    return {
-        "text": spoken_text,
-        "score": score,
-        "expected_phoneme": expected_phoneme,
-        "spoken_phoneme": spoken_phoneme,
-        "phoneme_comparison": phoneme_comparison,
-        "strengths": strengths,
-        "weaknesses": weaknesses
-    }
+        if temp_path and os.path.exists(temp_path):
+            os.remove(temp_path)
