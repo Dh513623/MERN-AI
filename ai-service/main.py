@@ -10,6 +10,14 @@ from g2p_en import G2p
 from rapidfuzz import fuzz
 from difflib import SequenceMatcher
 
+import nltk
+
+for pkg in ["punkt", "wordnet", "averaged_perceptron_tagger_eng"]:
+    try:
+        nltk.data.find(pkg)
+    except LookupError:
+        nltk.download(pkg)
+
 app = FastAPI()
 
 # ----------------------------------
