@@ -28,7 +28,7 @@ async def chrome_devtools_probe():
     return Response(status_code=204)
 
 # ✅ Load Whisper model
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 g2p = G2p()
 
