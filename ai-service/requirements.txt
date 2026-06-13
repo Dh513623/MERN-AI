@@ -1,8 +1,8 @@
-fastapi==0.115.0
-uvicorn==0.30.6
-faster-whisper==1.0.3
-numpy==1.26.4
-g2p-en==2.1.0
-rapidfuzz==3.9.7
-python-multipart==0.0.9
-ffmpeg-python==0.2.0
+fastapi
+uvicorn
+faster-whisper
+numpy
+g2p-en
+rapidfuzz
+python-multipart
+ffmpeg-python
