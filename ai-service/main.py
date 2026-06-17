@@ -1,4 +1,4 @@
-
+# uvicorn main:app --reload --port 8000
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import Response
 from faster_whisper import WhisperModel
