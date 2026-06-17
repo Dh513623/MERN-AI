@@ -146,9 +146,9 @@ exports.evaluatePronunciation = async (req, res) => {
 
     console.log("🚀 Calling AI service...");
     console.time("AI Request");
-    const aiResponse = await axios.post("http://127.0.0.1:8000/analyze", form, {
+    const aiResponse = await axios.post("https://mern-ai-englishapp1.onrender.com/analyze", form, {
       headers: form.getHeaders(),
-      timeout: 20000, // ✅ avoid hanging
+      timeout: 180000, // ✅ avoid hanging
     });
     console.timeEnd("AI Request");
     console.log("✅ AI response received");
