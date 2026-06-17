@@ -10,11 +10,11 @@ exports.getPronunciation = async (audioPath, sentence) => {
     formData.append("sentence", sentence);
 
     const response = await axios.post(
-      "http://localhost:8000/analyze",
+      "https://mern-ai-englishapp1.onrender.com/analyze",
       formData,
       {
         headers: formData.getHeaders(),
-        timeout: 60000
+        timeout: 180000
       }
     );
 
