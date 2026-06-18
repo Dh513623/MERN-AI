@@ -1,10 +1,11 @@
-# uvicorn main:app --reload --port 8000
+
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import Response
 from faster_whisper import WhisperModel
 
 import tempfile
 import os
+import numpy as np
 
 from g2p_en import G2p
 from rapidfuzz import fuzz
@@ -42,25 +43,55 @@ async def chrome_devtools_probe():
 
 
 # ----------------------------------
-# Lazy Load Whisper
+# Preload Whisper at startup (NOT lazily on first request)
 # ----------------------------------
 
 model = None
+
+
+@app.on_event("startup")
+async def load_model_on_startup():
+    """
+    Loads the model once when the container/process boots.
+    This means the cold-start cost happens at deploy time,
+    not on a user's first request after the service wakes up.
+    """
+    global model
+
+    print("Loading Faster Whisper Tiny...")
+
+    model = WhisperModel(
+        "tiny",
+        device="cpu",
+        compute_type="int8"
+    )
+
+    print("Model loaded. Warming up with a dummy inference...")
+
+    try:
+        # Run one fake transcription so all internal buffers/kernels
+        # are initialized before the first real user request arrives.
+        dummy_audio = np.zeros(16000, dtype=np.float32)  # 1 second of silence
+        list(model.transcribe(dummy_audio, beam_size=1)[0])
+        print("Warmup complete. Model ready.")
+    except Exception as e:
+        # Warmup failing shouldn't crash the app - real requests will
+        # still trigger lazy init inside faster-whisper if needed.
+        print("Warmup skipped/failed (non-fatal):", str(e))
 
 
 def get_model():
     global model
 
     if model is None:
-        print("Loading Faster Whisper Tiny...")
-
+        # Fallback safety net in case startup event hasn't finished yet
+        # or was skipped (e.g. --reload edge cases in dev).
+        print("Model not ready yet, loading now...")
         model = WhisperModel(
             "tiny",
             device="cpu",
             compute_type="int8"
         )
-
-        print("Model Loaded Successfully")
 
     return model
 
@@ -139,11 +170,13 @@ async def analyze(
 
         print("Audio Saved:", temp_path)
 
-        model = get_model()
+        whisper_model = get_model()
 
-        segments, info = model.transcribe(
+        segments, info = whisper_model.transcribe(
             temp_path,
-            beam_size=1
+            beam_size=1,
+            vad_filter=True,                 # skip silence -> faster on short clips
+            condition_on_previous_text=False  # avoids extra context overhead
         )
 
         spoken_text = " ".join(
