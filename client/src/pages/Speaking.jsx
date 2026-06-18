@@ -1,17 +1,14 @@
 import { useState, useMemo, useEffect } from "react";
-import { convertToWav } from "../utils/audioConverter";
 import {
   generateSpeakingTopic,
   evaluateSpeaking,
 } from "../services/speakingService";
-
-import { useAudioRecorder } from "../hooks/useAudioRecorder";
+import ScoreRing from "../components/ui/ScoreRing";
 import { useTextToSpeech } from "../hooks/useTextToSpeech";
 import { useSpeechRecognition } from "../hooks/useSpeechRecognition";
 
 import LoadingSpinner from "../components/ui/LoadingSpinner";
 import ErrorAlert from "../components/ui/ErrorAlert";
-import ScoreRing from "../components/ui/ScoreRing";
 
 import {
   HiOutlineChatBubbleLeftRight,
@@ -38,14 +35,6 @@ export default function Speaking() {
   console.log("dailyTask:", dailyTask);
 
   const {
-    isRecording,
-    audioBlob,
-    startRecording,
-    stopRecording,
-    resetRecording,
-  } = useAudioRecorder();
-
-  const {
     transcript,
     isListening,
     startListening,
@@ -55,11 +44,15 @@ export default function Speaking() {
 
   const { speak, isSpeaking } = useTextToSpeech();
 
- useEffect(() => {
-  if (dailyTask?.completed === true) {
-    navigate("/daily-tasks", { replace: true });
-  }
-}, [dailyTask?.completed]);
+  useEffect(() => {
+    if (dailyTask?.completed === true) {
+      navigate("/daily-tasks", { replace: true });
+    }
+  }, [dailyTask?.completed]);
+
+  useEffect(() => {
+    console.log("Transcript:", transcript);
+  }, [transcript]);
   // ✅ SINGLE SOURCE OF TRUTH
   const activeTopic = useMemo(() => {
     if (fromDailyTask && dailyTask) {
@@ -86,8 +79,6 @@ export default function Speaking() {
     setError("");
     setLoading(true);
     setResult(null);
-
-    resetRecording();
     resetTranscript();
 
     try {
@@ -118,37 +109,26 @@ export default function Speaking() {
         return;
       }
 
-      if (!audioBlob && !transcript) {
-        setError("Please provide speech first.");
-        setEvaluating(false);
-        return;
-      }
+      const finalTranscript = transcript?.trim();
 
-      const formData = new FormData();
+if (!finalTranscript) {
+  setError("Please provide speech first.");
+  setEvaluating(false);
+  return;
+}
 
-      let finalAudio = audioBlob;
+      const payload = {
+        mode: "evaluate",
+        topicId: activeTopic.topicId,
+        transcript: finalTranscript,
+      };
 
-      if (audioBlob?.type === "audio/webm") {
-        finalAudio = await convertToWav(audioBlob);
-      }
-
-      formData.append("mode", "evaluate");
-      formData.append("topicId", activeTopic.topicId);
-      formData.append("sentence", activeTopic.title);
-      formData.append("cuePoints", JSON.stringify(activeTopic.cuePoints || []));
-
-      if (finalAudio) {
-        formData.append("audio", finalAudio, "recording.wav");
-      }
-
-      const res = await evaluateSpeaking(formData);
+      const res = await evaluateSpeaking(payload);
       setResult(res.data);
-      
+
       if (res.data.improved_version) {
         setTimeout(() => speak(res.data.improved_version), 500);
       }
-      
-
     } catch (err) {
       setError(err.response?.data?.message || "Evaluation failed");
     } finally {
@@ -220,30 +200,81 @@ export default function Speaking() {
             )}
           </div>
 
-          {/* RECORD UI */}
-          <div className="glass-card p-6 flex flex-col items-center gap-4">
-            <button
-              onClick={isRecording ? stopRecording : startRecording}
-              className={isRecording ? "mic-btn-recording" : "mic-btn"}
-            >
-              <HiOutlineMicrophone className="w-7 h-7" />
-            </button>
+          {/* SPEAKING CARD */}
+          <div className="glass-card p-8">
+            <div className="flex flex-col items-center">
+              <button
+                onClick={() => {
+                  if (isListening) {
+                    stopListening();
+                    return;
+                  }
 
-            <p className="text-sm text-dark-400">
-              {isRecording ? "Recording..." : "Tap to speak"}
-            </p>
+                  stopListening();
+                  resetTranscript();
 
-            {audioBlob && (
-              <audio controls src={URL.createObjectURL(audioBlob)} />
-            )}
+                  setTimeout(() => {
+                    startListening();
+                  }, 300);
+                }}
+                
+                className={`
+        w-28 h-28 rounded-full flex items-center justify-center
+        transition-all duration-300
+        ${
+          isListening
+            ? "bg-red-500 animate-pulse shadow-[0_0_40px_rgba(239,68,68,0.5)]"
+            : "bg-gradient-to-r from-purple-500 to-violet-500"
+        }
+      `}
+              >
+                <HiOutlineMicrophone className="w-12 h-12 text-white" />
+              </button>
 
-            <button
-              onClick={handleEvaluate}
-              disabled={evaluating}
-              className="btn-primary"
-            >
-              {evaluating ? "Evaluating..." : "Submit"}
-            </button>
+              <h3 className="mt-6 text-xl font-bold text-white">
+                {isListening ? "Listening..." : "Ready to Speak"}
+              </h3>
+
+              <p className="text-dark-400 mt-2 text-center">
+                {isListening
+                  ? "Speak naturally about the topic"
+                  : "Click the microphone and start speaking"}
+              </p>
+
+              {!isListening && transcript && (
+                <div className="mt-5 flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30 text-green-400">
+                  ✓ Speech captured successfully
+                </div>
+              )}
+              {transcript && (
+  <div className="mt-6 p-4 rounded-lg bg-white/5 border border-white/10 text-white text-sm">
+    <p className="text-dark-300 mb-2">Your Speech:</p>
+    <p className="leading-6">{transcript}</p>
+  </div>
+)}
+
+              <div className="flex gap-3 mt-6">
+                {transcript && (
+                  <button
+                    onClick={() => {
+                      stopListening();
+                      resetTranscript();
+                    }}
+                    className="btn-secondary"
+                  >
+                    Re-record
+                  </button>
+                )}
+
+                <button
+                  onClick={handleEvaluate}
+                  disabled={!transcript || evaluating}
+                  className="btn-primary"
+                >
+                  {evaluating ? "Evaluating..." : "Submit Response"}
+                </button>
+              </div>
+            </div>
           </div>
 
           <button onClick={handleGenerate} className="btn-secondary">
@@ -255,65 +286,169 @@ export default function Speaking() {
       {/* RESULT */}
       {result && (
         <div className="space-y-6 animate-slide-up">
-          <div className="glass-card p-6 text-white">
-            <h2 className="text-xl font-bold text-center mb-4">Results 🎯</h2>
+          {/* OVERALL SCORE */}
+          <div className="glass-card p-8 text-center">
+            <div className="flex justify-center mb-5">
+              <ScoreRing
+                score={result.overallScore || 0}
+                label="Overall Score"
+              />
+            </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <h2 className="text-2xl font-bold text-white">
+              Speaking Assessment
+            </h2>
+
+            <p className="text-dark-400 mt-2">AI Evaluation Complete</p>
+          </div>
+
+          {/* SKILL BREAKDOWN */}
+          <div className="glass-card p-6">
+            <div className="flex items-center justify-between mb-5">
+              <h3 className="text-lg font-semibold text-white">
+                Skill Breakdown
+              </h3>
+
+              <span className="badge-primary">{result.overallScore}/10</span>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               <ScoreRing score={result.grammarScore || 0} label="Grammar" />
+
               <ScoreRing score={result.fluencyScore || 0} label="Fluency" />
+
               <ScoreRing
                 score={result.vocabularyScore || 0}
                 label="Vocabulary"
               />
+
               <ScoreRing
                 score={result.pronunciationScore || 0}
                 label="Pronunciation"
               />
+
               <ScoreRing
                 score={result.confidenceScore || 0}
                 label="Confidence"
               />
-              <ScoreRing score={result.overallScore || 0} label="Overall" />
             </div>
           </div>
 
-          {result.improved_version && (
-            <div className="glass-card p-6 text-white">
-              <h3 className="text-primary-400 mb-2">Improved Version</h3>
-              <p>{result.improved_version}</p>
+          {/* QUICK ANALYSIS */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="glass-card p-5">
+              <h3 className="text-green-400 font-semibold mb-3">
+                ✓ Strong Areas
+              </h3>
 
-              <button
-                onClick={() =>
-                  isSpeaking
-                    ? window.speechSynthesis.cancel()
-                    : speak(result.improved_version)
-                }
-                className="btn-ghost mt-3"
-              >
-                <HiOutlineSpeakerWave className="inline w-4 h-4" /> Listen
-              </button>
+              <div className="space-y-2 text-dark-200">
+                {(result.vocabularyScore || 0) >= 6 && (
+                  <p>• Good vocabulary usage</p>
+                )}
+
+                {(result.pronunciationScore || 0) >= 6 && (
+                  <p>• Clear pronunciation</p>
+                )}
+
+                {(result.confidenceScore || 0) >= 6 && (
+                  <p>• Good speaking confidence</p>
+                )}
+
+                {(result.fluencyScore || 0) >= 6 && <p>• Smooth fluency</p>}
+              </div>
+            </div>
+
+            <div className="glass-card p-5">
+              <h3 className="text-orange-400 font-semibold mb-3">
+                ⚠ Improve Next
+              </h3>
+
+              <div className="space-y-2 text-dark-200">
+                {(result.grammarScore || 0) < 6 && (
+                  <p>• Improve grammar accuracy</p>
+                )}
+
+                {(result.fluencyScore || 0) < 6 && (
+                  <p>• Reduce pauses while speaking</p>
+                )}
+
+                {(result.vocabularyScore || 0) < 6 && (
+                  <p>• Use richer vocabulary</p>
+                )}
+
+                {(result.pronunciationScore || 0) < 6 && (
+                  <p>• Focus on pronunciation clarity</p>
+                )}
+
+                {(result.confidenceScore || 0) < 6 && (
+                  <p>• Speak with more confidence</p>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* IMPROVED RESPONSE */}
+          {result.improved_version && (
+            <div className="glass-card p-6">
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-primary-400 font-semibold text-lg">
+                  ✨ Improved Response
+                </h3>
+
+                <button
+                  onClick={() =>
+                    isSpeaking
+                      ? window.speechSynthesis.cancel()
+                      : speak(result.improved_version)
+                  }
+                  className="btn-ghost"
+                >
+                  <HiOutlineSpeakerWave className="w-5 h-5" />
+                </button>
+              </div>
+
+              <p className="text-dark-200 leading-8">
+                {result.improved_version}
+              </p>
             </div>
           )}
 
-          {fromDailyTask && (
-  <button
-    onClick={async () => {
-      try {
-        await completeTask(dailyTask._id);
-      } catch (e) {
-        console.log("completeTask ignored:", e?.response?.data);
-      }
+          {/* ACTION BUTTONS */}
+          <div className="flex gap-3 flex-wrap">
+            <button
+              onClick={() => {
+                setResult(null);
+                resetTranscript();
+              }}
+              className="btn-secondary"
+            >
+              Try Again
+            </button>
 
-      navigate("/daily-tasks", {
-        state: { refresh: true },
-        replace: true,
-      });
-    }}
-    className="btn-primary mt-4"
-  >
-    Back to Daily Tasks
-  </button>
-)}
+            {!fromDailyTask && (
+              <button onClick={handleGenerate} className="btn-primary">
+                New Topic
+              </button>
+            )}
+          </div>
+
+          {fromDailyTask && (
+            <button
+              onClick={async () => {
+                try {
+                  await completeTask(dailyTask._id);
+                } catch {}
+
+                navigate("/daily-tasks", {
+                  state: { refresh: true },
+                  replace: true,
+                });
+              }}
+              className="btn-primary"
+            >
+              Back to Daily Tasks
+            </button>
+          )}
         </div>
       )}
     </div>
