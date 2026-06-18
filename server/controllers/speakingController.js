@@ -1,9 +1,7 @@
-const fs = require("fs");
 const Score = require("../models/Score");
 const User = require("../models/User");
 const SpeakingTopic = require("../models/SpeakingTopic");
 
-const { getPronunciation } = require("../services/pronunciationService");
 const { evaluateSpeaking } = require("../services/aiSpeakingService");
 
 // -----------------------------
@@ -57,21 +55,14 @@ const speakingEvaluate = async (req, res) => {
     // -----------------------------
     // 3️⃣ Evaluate mode: process audio
     else if (mode === "evaluate") {
-      if (!req.file)
-        return res.status(400).json({ message: "Audio file required" });
-      if (!req.body.sentence)
-        return res.status(400).json({ message: "Sentence required" });
-
-      audioPath = req.file.path;
-      console.log("📁 FILE CREATED:", audioPath);
-      const sentence = req.body.sentence;
+      const spokenText = req.body.transcript;
       const topicId = req.body.topicId;
 
-      // Pronunciation evaluation
-      const pronunciationRes = await getPronunciation(audioPath, sentence);
-      console.log("🔊 RAW WHISPER RESULT:", pronunciationRes);
-      console.log("📝 TRANSCRIBED TEXT:", pronunciationRes.text);
-      const spokenText = pronunciationRes.text;
+      if (!spokenText?.trim()) {
+        return res
+          .status(400)
+          .json({ message: "Speech not detected. Please speak clearly." });
+      }
 
       if (!spokenText?.trim())
         return res
@@ -83,11 +74,8 @@ const speakingEvaluate = async (req, res) => {
       console.log("👉 FINAL TEXT SENT TO AI:", spokenText);
       const aiResult = await evaluateSpeaking(spokenText, topic);
 
-      fs.unlink(audioPath, (err) => {
-        if (err) console.log("Delete failed:", err.message);
-        else console.log("File deleted");
-      });
-      // Compute overall score
+     
+      
       const overallScore = Number(
         (
           (aiResult.grammarScore +
